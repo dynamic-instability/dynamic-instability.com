@@ -128,12 +128,12 @@ object {
     font-size: 24pt;
     }
 
-  /* div.sidebar {
-    height: auto;
-  } */
+  div.sidebar {
+    height: 40vh;
+  }
 
   p.contact{
-    font-size: 18pt;
+    font-size: 20pt;
   }
 
   }
