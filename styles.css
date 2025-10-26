@@ -104,7 +104,7 @@ p.contact{
   /* width: 90vw; */
   /* border: 2px solid #333; */
   text-align: center;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 /* ----- basic ----- */
@@ -125,15 +125,26 @@ object {
 
 @media (width < 1250px){
   body.sidebar {
-    font-size: 24pt;
-    }
+    font-size: 20pt;
+  }
+  
+  object {
+    border: 2px solid #333;
+    background-color: transparent;
+    height: auto;
+  } 
 
   div.sidebar {
-    height: 40vh;
+    height: auto;
+    /* border: 2px solid #333; */
   }
 
   p.contact{
-    font-size: 20pt;
+    font-size: 18pt;
+  }
+
+  div.contact {
+    top: 24vh;
   }
 
   }
