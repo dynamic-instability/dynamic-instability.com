@@ -1,0 +1,120 @@
+/* ----- concentric circle rotation ----- */
+.circle-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+
+.outer-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.outer-circle {
+  animation-name: rotate-counterclockwise;
+}
+
+.inner-circle {
+  animation-name: rotate-clockwise;
+}
+
+@keyframes rotate-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-counterclockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+div.circle-container{
+  /* border: 2px solid #333; */
+
+  position: fixed;
+  top: 15vh;  
+  left: 5vw;  
+
+  width: 90vw;
+  height: 70vh;
+}
+
+/* ----- sidebar ----- */
+a.sidebar {
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  /* border-bottom: 1.5px solid #000 !important; */
+}
+
+a.sidebar:hover {
+  cursor:pointer;
+  border-bottom: 1.5px solid #000 !important;
+}
+
+.list a.sidebar{border-bottom: 1.5px solid #000 !important;}
+
+body.sidebar{
+  /* font-family: 'Garamond'; */
+  background-color: transparent;
+  text-align: left;
+  font-size: 20px;
+}
+
+div.sidebar {
+  position: fixed !important;
+  top: 5vh;  
+  left: 5vw;
+
+  max-width: auto;
+}
+
+/* ----- contact ----- */
+
+div.contact{
+  /* border: 2px solid #333; */
+
+  position: fixed;
+  top: 20vh;  
+  left: 20vw; 
+
+  width: 60vw;
+  /* justify-content: center; */
+}
+p.contact{
+  /* font-family: ; */
+  /* width: 90vw; */
+  /* border: 2px solid #333; */
+  text-align: center;
+  font-size: 14pt;
+}
+
+/* ----- basic ----- */
+
+body {
+  background-color: #f0f0f0;
+}
+
+object {
+  /* border: 2px solid #333; */
+  background-color: transparent;
+}
