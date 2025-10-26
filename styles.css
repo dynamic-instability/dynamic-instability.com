@@ -125,13 +125,13 @@ object {
 
 @media (width < 1250px){
   body.sidebar {
-    font-size: 20pt;
+    font-size: 24pt;
   }
   
   object {
     border: 2px solid #333;
     background-color: transparent;
-    height: auto;
+    height: 20vh;
   } 
 
   div.sidebar {
@@ -140,7 +140,7 @@ object {
   }
 
   p.contact{
-    font-size: 18pt;
+    font-size: 24pt;
   }
 
   div.contact {
