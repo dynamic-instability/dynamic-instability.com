@@ -118,13 +118,12 @@ object {
 }
 
 
-
-@media (min-width: 600px) {
-      body.sidebar {
-        font-size: 24pt;
-      }
-
-      p.contact{
-        font-size: 18pt;
-      }
+@media (width <= 1250px){
+    body.sidebar {
+      font-size: 24pt;
     }
+
+    p.contact{
+      font-size: 18pt;
+    }
+  }
