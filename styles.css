@@ -131,7 +131,7 @@ object {
   object {
     border: 2px solid #333;
     background-color: transparent;
-    height: 20vh;
+    height: 150pt;
   } 
 
   div.sidebar {
@@ -140,7 +140,7 @@ object {
   }
 
   p.contact{
-    font-size: 24pt;
+    font-size: 30pt;
   }
 
   div.contact {
