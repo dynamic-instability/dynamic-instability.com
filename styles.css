@@ -84,6 +84,7 @@ div.sidebar {
   left: 5vw;
 
   max-width: auto;
+  height: auto;
 }
 
 /* ----- contact ----- */
@@ -117,13 +118,22 @@ object {
   background-color: transparent;
 }
 
+@media (1250px >= width) {
+  /* … */
+}
 
-@media (width <= 1250px){
-    body.sidebar {
-      font-size: 24pt;
+
+@media (width < 1250px){
+  body.sidebar {
+    font-size: 24pt;
     }
 
-    p.contact{
-      font-size: 18pt;
-    }
+  /* div.sidebar {
+    height: auto;
+  } */
+
+  p.contact{
+    font-size: 18pt;
+  }
+
   }
