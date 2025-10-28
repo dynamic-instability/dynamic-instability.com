@@ -46,7 +46,7 @@
   to { transform: rotate(-360deg); }
 }
 
-div.circle-container{
+div.circle-container {
   /* border: 2px solid #333; */
 
   position: fixed;
@@ -71,7 +71,7 @@ a.sidebar:hover {
   border-bottom: 1.5px solid #000 !important;
 }
 
-body.sidebar{
+body.sidebar {
   background-color: transparent;
   text-align: left;
   font-size: 18pt;
@@ -86,23 +86,96 @@ div.sidebar {
   height: auto;
 }
 
+/* ----- works ----- */
+
+a.workLink {
+  display: flex;
+  justify-content: space-between;
+  
+  color: #000;
+  /* background-color: transparent; */
+  cursor: pointer;
+  text-decoration: none;
+  /* border-bottom: 1.5px solid #000 !important; */
+  border-bottom: 1.5px solid transparent;
+}
+
+a.workLink:hover {
+  cursor:pointer;
+  border-bottom: 1.5px solid #000 !important;
+}
+
+div.worksLinks {
+  padding-left:30vw;
+  padding-right: 30vw;
+
+  font-size: 18pt;
+}
+
+.workTitle {
+  text-align: left;
+  text-decoration: none;
+}
+
+.workDate {
+  /* border: 2px solid #333; */
+  width: 15em;
+  text-align: right;
+}
+
+/* ----- essays ----- */
+div.essay {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  padding-left:30vw;
+  padding-right: 30vw;
+
+  font-size: 18pt;
+  text-align: justify;
+}
+
+p.essayTitle {
+  font-size: 24pt;
+  text-align: center;
+}
+
+p.essay {
+  text-indent: 2em;
+}
+
+p.essayQuote {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+p.essayFootnote {
+  font-size: 16pt;
+}
+
+p.essayDate {
+  text-align: right;
+}
+
 /* ----- contact ----- */
 
-div.contact{
+div.contact {
   /* border: 2px solid #333; */
 
   position: fixed;
   top: 20vh;  
-  left: 20vw; 
+  left: 30vw; 
 
-  width: 60vw;
+  width: 40vw;
   /* justify-content: center; */
 }
-p.contact{
+p.contact {
   /* border: 2px solid #333; */
   text-align: center;
   font-size: 18pt;
 }
+
+
 
 /* ----- basic ----- */
 
@@ -117,7 +190,6 @@ object {
 }
 
 @media (1250px >= width) {
-  /* … */
 }
 
 
@@ -136,8 +208,20 @@ object {
     height: auto;
     /* border: 2px solid #333; */
   }
+  
+  div.contact {
+    /* border: 2px solid #333; */
 
-  p.contact{
+    position: fixed;
+    top: 20vh;  
+    left: 20vw; 
+
+    width: 60vw;
+    height: 100%;
+    /* justify-content: center; */
+  }
+
+  p.contact {
     font-size: 30pt;
   }
 
