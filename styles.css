@@ -143,18 +143,18 @@ p.essay {
   text-indent: 2em;
 }
 
-p.essayQuote {
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 p.essayFootnote {
   font-size: 16pt;
 }
 
 p.essayDate {
   text-align: right;
+}
+
+img.essayImage {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* ----- contact ----- */
