@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Instability</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 
@@ -32,57 +33,118 @@
   </a> -->
 
   <div class="worksLinks">
-    <br><br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+    <br><br><br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Kafka and his precursors</i> 
         <span class="workDate">October 27, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius</i> 
         <span class="workDate">October 20, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Tlon, Uqbar, Orbis Tertius</i> 
         <span class="workDate">October 20, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">The circular ruins</i> 
         <span class="workDate">October 13, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Pierre Menard, author of Don Quixote</i> 
         <span class="workDate">October 6, 2025</span>
       </a>
     <br><br><br>
-          <a class="workLink" href="works/essay-template.html">
+          <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Kafka and his precursors</i> 
         <span class="workDate">October 27, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Tlon, Uqbar, Orbis Tertius</i> 
         <span class="workDate">October 20, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">The circular ruins</i> 
         <span class="workDate">October 13, 2025</span>
       </a>
     <br><br><br>
-      <a class="workLink" href="works/essay-template.html">
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Pierre Menard, author of Don Quixote</i> 
+        <span class="workDate">October 6, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Kafka and his precursors</i> 
+        <span class="workDate">October 27, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius Tlon, Uqbar, Orbis Tertius</i> 
+        <span class="workDate">October 20, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Tlon, Uqbar, Orbis Tertius</i> 
+        <span class="workDate">October 20, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">The circular ruins</i> 
+        <span class="workDate">October 13, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Pierre Menard, author of Don Quixote</i> 
+        <span class="workDate">October 6, 2025</span>
+      </a>
+    <br><br><br>
+          <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Kafka and his precursors</i> 
+        <span class="workDate">October 27, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">Tlon, Uqbar, Orbis Tertius</i> 
+        <span class="workDate">October 20, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
+        <i class="workTitle">The circular ruins</i> 
+        <span class="workDate">October 13, 2025</span>
+      </a>
+    <br><br><br>
+      <a class="workLink" href="/works/essay-template.html">
         <i class="workTitle">Pierre Menard, author of Don Quixote</i> 
         <span class="workDate">October 6, 2025</span>
       </a>
     <br><br><br>
   </div>
 
-  <div class="sidebar">
-    <object data="sidebar.html"></object>
-  </div>
+  <!-- <div class="menu">
+    <object class="menu" data="menu.html"></object>
+  </div> -->
+
+  <div id="menu-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('/menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menu-container').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error loading menu:', error);
+        });
+    });
+  </script>
+
 
 </body>
 </html>

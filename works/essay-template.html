@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Instability</title>
   <link rel="stylesheet" href="../styles.css"> <!-- Link to your CSS file -->
 
@@ -20,9 +21,9 @@
 
 <body>
 
-  <div class="sidebar">
-    <object data="../sidebar.html"></object>
-  </div>
+  <!-- <div class="menu">
+    <object class="menu" data="../menu.html"></object>
+  </div> -->
 
   <div class="essay">
     <p class="essayTitle"><i>Kafka and His Precursors</i></p>
@@ -108,8 +109,8 @@
         Scruples" by Robert Browning prophesies the work of Kafka, but our reading
         of Kafka noticeably refines and diverts our reading of the poem. Browning
         did not read it as we read it now. The word "precursor" is indispensable to
-        the vocabulary of criticism, but one must try to purify it from any connota
-        tion of polemic or rivalry. The fact is that each writer <i>creates</i> his precursors.
+        the vocabulary of criticism, but one must try to purify it from any connotation
+        of polemic or rivalry. The fact is that each writer <i>creates</i> his precursors.
         His work modifies our conception of the past, as it will modify the future.'
         In this correlation, the identity or plurality of men doesn't matter. The first
         Kafka of "<i>Betrachtung</i>" is less a precursor of the Kafka of the gloomy myths
@@ -130,8 +131,22 @@
 
     <img src="../images/borges-labyrinths-cover.jpg" alt="borges-labyrinths-cover" class="essayImage">
 
-
   </div>
+
+  <div id="menu-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('/menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menu-container').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error loading menu:', error);
+        });
+    });
+  </script>
 
 </body>
 </html>

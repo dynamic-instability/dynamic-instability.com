@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Instability</title>
   <link rel="stylesheet" href="styles.css"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +30,24 @@
     </p>
   </div>
 
-  <div class="sidebar">
+  <!-- <div class="menu">
+    <object class="menu" data="menu.html"></object>
+  </div> -->
 
-    <object data="sidebar.html"></object>
-  </div>
+  <div id="menu-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('menu-container').innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error loading menu:', error);
+        });
+    });
+  </script>
 
 </body>
 </html>
