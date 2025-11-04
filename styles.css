@@ -64,6 +64,7 @@ a.menu {
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
+  border-bottom: 1.5px solid transparent;
   /* border-bottom: 1.5px solid #000 !important; */
 }
 
@@ -227,33 +228,25 @@ object {
     display: none;  
   }
   div.mobileMenu {
-    /* background: linear-gradient(to top, rgba(240, 240, 240, 0.2), rgba(240, 240, 240, 1)); */
 
-    background: linear-gradient(
-      to bottom,
-      rgba(240, 240, 240, 1) 0%,
-      rgba(240, 240, 240, 1) 50%,
-      rgba(240, 240, 240, 0.8) 90%,
-      rgba(240, 240, 240, 0) 100%
-    );
+    background-color: #f0f0f0;
 
-
-    font-size: 16pt;
-    /* border: 2px solid #333; */
+    font-size: 14pt;
+    border-bottom: 2px solid #333;
     position: fixed;
     left: 0vw;
     top: 0vh;
 
     display: block;
-    /* background-color: #f0f0f0; */
 
     width:86vw;
     padding-left: 7vw;
     padding-right: 7vw;
     padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
     justify-content: center;
   }
+
   div.linkRow{
     display: grid;
     grid-template-columns: 0.8fr 1.4fr 0.8fr;
@@ -303,9 +296,13 @@ object {
     padding-left:10vw;
     padding-right: 10vw;
 
-    font-size: 14pt;
+    font-size: 12pt;
     text-align: justify;
   }
+
+  p.essayFootnote {
+    font-size: 12pt;
+  } 
 
   /* ----- works ----- */
 
